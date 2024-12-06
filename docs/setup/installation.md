@@ -251,6 +251,12 @@ python -m synapse.app.homeserver \
     --report-stats=[yes|no]
 ```
 
+**Important Notes for Config Generation:**
+- You **must** specify both `--server-name` and `--config-path`
+- `--server-name` should be your Matrix server's domain name
+- `--config-path` is the path where the configuration file will be generated
+- `--report-stats` is required and must be either `yes` or `no`
+
 ... substituting an appropriate value for `--server-name` and choosing whether
 or not to report usage statistics (hostname, Synapse version, uptime, total
 users, etc.) to the developers via the `--report-stats` argument.
